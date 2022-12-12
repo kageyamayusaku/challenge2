@@ -2,3 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+table{
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+}
+
+tr{
+  display: table-row;
+}
+
+th{
+  display:table-cell;
+  width:100px;
+  text-align:center;
+  padding-bottom:5px;
+}

@@ -2,9 +2,13 @@
   <h1>Books</h1>
   
   <table>
-    <p>Title</p>
-    <p>Body</p>
-    <div class="index">
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th></th>
+    </tr>
+    <tr>
+    <td>
       <% @books.each do |b| %>
         <span><%= b.title %></span>
         <span><%= b.body %></span>
@@ -12,7 +16,8 @@
         <%= link_to "Edit" , book_path(b) %>
         <%= link_to "Destroy" , book_path(b) %>
       <% end %>
-    </div>
+      </td>
+    </tr>
   </table>
   
   <h2>New book</h2>
