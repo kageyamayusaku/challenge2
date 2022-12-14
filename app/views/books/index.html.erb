@@ -13,21 +13,25 @@
         <span><%= b.title %></span>
         <span><%= b.body %></span>
         <%= link_to "Show" , book_path(b) %>
-        <%= link_to "Edit" , book_path(b) %>
-        <%= link_to "Destroy" , book_path(b) %>
+        <%= link_to "Edit" , edit_book_path(b) %>
+        <%= link_to "Destroy" , edit_book_path(b) %>
       <% end %>
       </td>
     </tr>
   </table>
   
   <h2>New book</h2>
-  <div class="new">
-    <%= form_with model: @book, url: "/books", method: :post do |f| %>
-      <h4>Title</h4>
+  <%= form_with model: @book, url: "/books", method: :post do |f| %>
+    <div class="field">
+      <label>Title</label>
       <%= f.text_field :title %>
-      <h4>Body</h4>
+    </div>
+    <div class="field">
+      <label>Body</label>
       <%= f.text_area :body %>
+    </div>
+    <div class="field">
       <%= f.submit "Create Book" %>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
 </body>
