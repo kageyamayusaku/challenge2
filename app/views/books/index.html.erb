@@ -14,7 +14,7 @@
         <span><%= b.body %></span>
         <%= link_to "Show" , book_path(b) %>
         <%= link_to "Edit" , edit_book_path(b) %>
-        <%= link_to "Destroy" , edit_book_path(b) %>
+        <%= link_to "Destroy" , "/books/#{b.id}", method: :delete %>
       <% end %>
       </td>
     </tr>
