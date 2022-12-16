@@ -2,17 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+/*index.html.erb*/
 table{
   display: table;
   border-collapse: separate;
   border-spacing: 2px;
   border-color: grey;
 }
-
 tr{
   display: table-row;
 }
-
 th{
   display:table-cell;
   width:100px;
@@ -20,10 +19,42 @@ th{
   padding-bottom:5px;
 }
 
+h2{
+  margin:18px 0;
+}
 .field{
   display:block;
   margin-bottom:10px;
 }
 label{
   display:block;
+}
+
+
+
+/*error message*/
+.error_create{
+  width: 470px;
+  border: 2px solid red;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+h3{
+  text-align: left;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  background-color: #c00;
+  color: #fff;
+}
+ul{
+  padding:35px 80px;
+}
+li{
+  font-size:12px;
+  list-style-type: square;
+}
+.field_error{
+  padding: 2px;
+  background-color: red;
+  display: table;
 }
