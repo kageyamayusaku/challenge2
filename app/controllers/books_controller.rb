@@ -23,7 +23,7 @@ class BooksController < ApplicationController
     book = Book.find(params[:id])
     book.update(book_params)
     redirect_to book_path(book.id)
-    end
+  end
   
   private
   def book_params
