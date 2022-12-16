@@ -3,20 +3,15 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 /*index.html.erb*/
-table{
-  display: table;
-  border-collapse: separate;
-  border-spacing: 2px;
-  border-color: grey;
-}
-tr{
-  display: table-row;
-}
 th{
-  display:table-cell;
-  width:100px;
-  text-align:center;
+  width:64px;
   padding-bottom:5px;
+}
+th:nth-child(2){
+  width:85px;
+}
+td{
+  padding:0 5px 7px;
 }
 
 h2{
